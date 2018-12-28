@@ -12,8 +12,8 @@ class CreateTargetsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('description');
-            $table->string('time');
-            $table->string('completed');
+            $table->integer('time');
+            $table->boolean('completed');
         });
     }
 
